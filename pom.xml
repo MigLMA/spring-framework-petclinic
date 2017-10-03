@@ -442,7 +442,8 @@
                 <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
                 <jdbc.url>jdbc:mysql://localhost:3306/petclinic?useUnicode=true</jdbc.url>
                 <jdbc.username>root</jdbc.username>
-                <jdbc.password>petclinic</jdbc.password>
+                <!-- <jdbc.password>petclinic</jdbc.password> -->
+                <jdbc.password>root1234</jdbc.password>
             </properties>
             <dependencies>
                 <dependency>
