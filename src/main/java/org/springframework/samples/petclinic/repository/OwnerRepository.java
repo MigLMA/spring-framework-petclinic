@@ -49,7 +49,7 @@ public interface OwnerRepository {
      * @return the <code>Owner</code> if found
      * @throws org.springframework.dao.DataRetrievalFailureException if not found
      */
-    Owner findById(int id) throws DataAccessException;
+    Owner findById(Integer id) throws DataAccessException;
 
 
     /**
