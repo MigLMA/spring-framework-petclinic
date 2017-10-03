@@ -48,7 +48,7 @@
 
     <!--<logger name="org.hibernate" level="debug"/> -->
     <logger name="org.springframework.samples.petclinic" level="debug"/>
-
+<!--
     <root level="info">
         <appender-ref ref="console"/>
     </root>
@@ -57,7 +57,7 @@
         <appender-ref ref="console"/>
         <appender-ref ref="FILE" />
     </root>
-    
+-->    
     <root level="TRACE">
         <appender-ref ref="rollingFILE" />
     </root>
