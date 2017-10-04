@@ -19,6 +19,8 @@
         <!-- Spring -->
         <spring-io-platform.version>Athens-SR3</spring-io-platform.version>
         <spring-data-jdbc.version>1.1.0.RELEASE</spring-data-jdbc.version>
+        
+        <spring-security-web.version>4.2.3.RELEASE</spring-security-web.version>
 
         <!-- Web dependencies -->
         <!-- Version update should also be done in wro.xml, petclinic.less and static resources: htmlHeader.tag and footer.tag-->
@@ -132,6 +134,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-oxm</artifactId>
         </dependency>
+        <!-- Spring SECURITY -->
+        <dependency>
+	        <groupId>org.springframework.security</groupId>
+	        <artifactId>spring-security-web</artifactId>
+	        <version>${spring-security-web.version}</version>
+    	</dependency>
+        <!--  -->
 
         <dependency>
             <groupId>org.aspectj</groupId>
