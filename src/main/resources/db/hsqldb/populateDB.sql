@@ -51,3 +51,18 @@ INSERT INTO visits VALUES (1, 7, '2013-01-01', 'rabies shot');
 INSERT INTO visits VALUES (2, 8, '2013-01-02', 'rabies shot');
 INSERT INTO visits VALUES (3, 8, '2013-01-03', 'neutered');
 INSERT INTO visits VALUES (4, 7, '2013-01-04', 'spayed');
+
+
+INSERT INTO Users VALUES (1, 'useradmin', '$2y$10$yIng7EHQ5NZjRai3FnkXmeRzc8Dwwf5DcuR3dNL7rN5x6isqWWBRS'); -- password
+INSERT INTO Users VALUES (2, 'barrywhite', '$2y$10$o878kaEOoDDUOv.moPtJHuErKNolTraqQ6OVP4CdWYZ5gq3k74UiW'); -- Enunlugardelamancha
+INSERT INTO Users VALUES (3, 'johndoe', '$2y$10$iIOen5rPUwwvwNdYO5Ai4uAPFf8tu2lGP2.qnxyFm.ltTXhi4P0Em'); -- johndoe1234
+
+INSERT INTO Roles VALUES (1, 'admin');
+INSERT INTO Roles VALUES (2, 'dba');
+INSERT INTO Roles VALUES (3, 'user');
+
+INSERT INTO UserRoles VALUES(1,1);
+INSERT INTO UserRoles VALUES(1,2);
+INSERT INTO UserRoles VALUES(1,3);
+INSERT INTO UserRoles VALUES(2,3);
+INSERT INTO UserRoles VALUES(3,3);

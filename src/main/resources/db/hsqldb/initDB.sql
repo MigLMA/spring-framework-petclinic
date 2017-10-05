@@ -6,6 +6,10 @@ DROP TABLE pets IF EXISTS;
 DROP TABLE types IF EXISTS;
 DROP TABLE owners IF EXISTS;
 
+DROP TABLE Users IF EXISTS;
+DROP TABLE Roles IF EXISTS;
+DROP TABLE UserRoles IF EXISTS;
+
 
 CREATE TABLE vets (
   id         INTEGER IDENTITY PRIMARY KEY,
@@ -62,3 +66,21 @@ CREATE TABLE visits (
 );
 ALTER TABLE visits ADD CONSTRAINT fk_visits_pets FOREIGN KEY (pet_id) REFERENCES pets (id);
 CREATE INDEX visits_pet_id ON visits (pet_id);
+
+
+
+CREATE TABLE Users(
+  UserId      INTEGER IDENTITY PRIMARY KEY,
+  Username    VARCHAR(255) NOT NULL,
+  Password    VARCHAR(255) NOT NULL,
+  CONSTRAINT IXUQ_USERNAME0 UNIQUE(Username));
+CREATE INDEX users_user_name ON Users (Username);
+
+CREATE TABLE Roles(
+  RoleId      INTEGER IDENTITY PRIMARY KEY,
+  Name    VARCHAR(25) NOT NULL);
+CREATE INDEX roles_name ON Roles (Name);
+
+CREATE TABLE UserRoles(
+  USER_ID_FK INTEGER,
+  ROLE_ID_FK INTEGER);
